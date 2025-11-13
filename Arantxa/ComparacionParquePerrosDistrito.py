@@ -37,13 +37,16 @@ cuenta_perros_norm = cuenta_perros / 1000
 x = np.arange(len(distritos))
 ancho = 0.35
 
+# fig es el lienzo completo
+# ax es el eje donde se pintan las cosas.
 fig, ax = plt.subplots(figsize=(12,6))
 
+# posición de la barra, set de datos, ancho fijado, nombre del dato, color para la barra
 ax.bar(x - ancho/2, cuenta_parques, width=ancho, label='Parques Caninos', color='steelblue')
 ax.bar(x + ancho/2, cuenta_perros_norm, width=ancho, label='Perros (x1000)', color='tomato')
 
-ax.set_xticks(x)
-ax.set_xticklabels(distritos, rotation=45, ha='right')
+ax.set_xticks(x) # define en qué posiciones irán las etiquetas
+ax.set_xticklabels(distritos, rotation=45, ha='right') # escribe texto en cada stick ha=horizontal alignment
 
 ax.set_ylabel('Cantidad')
 ax.set_title('Parques Caninos vs Perros Normalizados por Distrito')

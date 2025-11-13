@@ -23,6 +23,7 @@ ax.bar(x=distrito, height=numero_gatos)
 plt.xlabel('Distrito')
 plt.ylabel('Número de gatos')
 plt.title('Número de gatos por distrito 2024 MADRID')
+plt.tight_layout()
 plt.savefig("numero_gatos_distrito2024.png")
 plt.show()
 
