@@ -50,5 +50,6 @@ ax.set_title('Parques Caninos vs Perros Normalizados por Distrito')
 ax.legend()
 
 plt.tight_layout()
+plt.savefig('comp-parques-perros.png')
 plt.show()
 
