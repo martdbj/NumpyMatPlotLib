@@ -24,7 +24,7 @@ distrito_personas = poblacion['distrito']
 num_personas = poblacion['num_personas']
 
 
-animales2024 = animales[animales['ANO'] == 2024]
+animales2024 = animales[animales['AÑO'] == 2024]
 distrito_perros = animales2024['DISTRITO']
 num_perros = animales2024['ESPECIE_CANINA']
 
