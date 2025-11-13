@@ -10,8 +10,6 @@ animales = np.genfromtxt(
     encoding='utf-8-sig'
 )
 
-print(animales.dtype)
-
 animales2024 = animales[animales['ANO'] > 2023]
 distrito = animales2024['DISTRITO']
 numero_perros = animales2024['ESPECIE_CANINA']
