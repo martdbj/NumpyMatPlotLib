@@ -28,6 +28,9 @@ animales2024 = animales[animales['ANO'] == 2024]
 distrito_perros = animales2024['DISTRITO']
 num_perros = animales2024['ESPECIE_CANINA']
 
+print(num_personas)
+print(num_perros)
+
 max_personas = num_personas.max()
 min_personas = num_personas.min()
 max_perros = num_perros.max()
@@ -84,5 +87,6 @@ plt.ylabel('Número de perros (normalizado)')
 plt.title('Relación entre personas y perros por distrito (normalizado)')
 plt.legend(title="Distrito", bbox_to_anchor=(1, 1), loc='upper left')
 plt.tight_layout()
+plt.savefig('ratio_personas_perros.png')
 plt.show()
 
