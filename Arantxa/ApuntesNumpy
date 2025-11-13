@@ -1,0 +1,17 @@
+Orden correcto de Matplotlib
+
+plt.figure()
+plt.subplots_adjust(...)
+plt.plot(...)
+plt.legend()
+plt.savefig(...)
+
+
+for d in distritos:
+    datos = censo[censo['DISTRITO'] == d]
+    np.max(datos['ESPECIE_FELINA'])
+
+    # Normalización Min–Max
+    caninos_norm = (datos['ESPECIE_CANINA'] - np.min(datos['ESPECIE_CANINA'])) / (np.max(datos['ESPECIE_CANINA']) - np.min(datos['ESPECIE_CANINA']))
+    felinos_norm = (datos['ESPECIE_FELINA'] - np.min(datos['ESPECIE_FELINA'])) / (np.max(datos['ESPECIE_FELINA']) - np.min(datos['ESPECIE_FELINA']))
+
