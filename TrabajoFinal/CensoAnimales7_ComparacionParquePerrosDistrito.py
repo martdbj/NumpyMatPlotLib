@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 parques_caninos = np.genfromtxt(
-    '../TrabajoFinal/areas_caninas202511.csv',
+    './areas_caninas202511.csv',
     delimiter=';',
     dtype=None,
     names=True,

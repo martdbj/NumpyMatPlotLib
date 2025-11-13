@@ -11,11 +11,12 @@ while inicializacion:
     print("[4] Número perros por distrito 2024 MADRID")
     print("[5] Número gatos por distrito 2024 MADRID")
     print("[6] Relación entre personas y perros por distrito (normalizado)")
-    print("[7] Salir")
+    print("[7] Parques Caninos vs Perros por distrito (normalizado)")
+    print("[8] Salir")
 
     user_choice = input("Escriba su elección: ")
-    if not user_choice.isdigit() or int(user_choice) < 1 or int(user_choice) > 7:
-        print("Error. Debe de introducir un número entre 1-7")
+    if not user_choice.isdigit() or int(user_choice) < 1 or int(user_choice) > 8:
+        print("Error. Debe de introducir un número entre 1-9")
         input("Pulse enter para continuar")
         continue
 
@@ -33,6 +34,8 @@ while inicializacion:
         case "6":
             os.system('py CensoAnimales6_RatioPersonasPerros.py')
         case "7":
+            os.system('py CensoAnimales7_ComparacionParquePerrosDistrito.py')
+        case "8":
             inicializacion = False
             print("Muchas gracias por usar nuestra aplicación")
         case _:
