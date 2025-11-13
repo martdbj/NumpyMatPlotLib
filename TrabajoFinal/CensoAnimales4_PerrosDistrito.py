@@ -23,9 +23,9 @@ ax.bar(x=distrito, height=numero_perros)
 plt.xlabel('Distrito')
 plt.ylabel('Número de perros')
 plt.title('Número de perros por distrito 2024 MADRID')
+plt.savefig('numero_perros_distrito2024.png')
 plt.show()
 
-print(distrito)
-print(numero_perros)
+
 
 
