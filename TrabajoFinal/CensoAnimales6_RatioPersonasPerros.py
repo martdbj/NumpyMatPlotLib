@@ -23,7 +23,6 @@ poblacion['distrito'] = np.char.upper(poblacion['distrito'])
 distrito_personas = poblacion['distrito']
 num_personas = poblacion['num_personas']
 
-
 animales2024 = animales[animales['ANO'] == 2024]
 distrito_perros = animales2024['DISTRITO']
 num_perros = animales2024['ESPECIE_CANINA']
@@ -68,7 +67,6 @@ distritos_unicos = np.unique(distrito_personas)
 cmap_21 = ListedColormap(colors_21)
 colores = {distrito: cmap_21(i) for i, distrito in enumerate(distritos_unicos)}
 classes = np.arange(21)
-
 size = num_personas / 2
 
 plt.figure(figsize=(8,6))

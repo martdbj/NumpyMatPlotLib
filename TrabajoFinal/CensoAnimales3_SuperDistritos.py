@@ -17,8 +17,10 @@ plt.figure(figsize=(10, 5))
 primera = True
 for d in distritos:
     datos = censo[censo['DISTRITO'] == d]
-    plt.plot(datos['ANO'], datos['ESPECIE_CANINA'], color='tab:blue', alpha=0.5, label='Perros' if primera else "_nolegend_")
-    plt.plot(datos['ANO'], datos['ESPECIE_FELINA'], color='tab:orange', alpha=0.5,label='Gatos' if primera else "_nolegend_")
+    plt.plot(datos['ANO'], datos['ESPECIE_CANINA'], color='tab:blue',
+             alpha=0.5, label='Perros' if primera else "_nolegend_")
+    plt.plot(datos['ANO'], datos['ESPECIE_FELINA'], color='tab:orange',
+             alpha=0.5,label='Gatos' if primera else "_nolegend_")
     primera = False
 
 
